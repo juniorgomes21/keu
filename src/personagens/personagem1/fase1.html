@@ -13,30 +13,9 @@
             <p>Resposta: 1-  historia 1 </p>
             <p>Resposta: 2-  historia 1 </p>
             <p>Resposta: 3-  historia 1 </p>
-            <button type="button" onclick="escolha()">RESPONDER</button>
+            <button type="button" onclick="escolha(2)">RESPONDER</button>
         </div>
     </main>
-    <script>
-        function escolha() {
-
-            let resposta = window.prompt("selecione a resposta");
-
-            if (resposta == "1") {
-                window.location.href = "fase2.html"
-            } 
-            else if(resposta == "2") {
-                alert("lamentamos vc perdeu o Jogo! =(")
-                window.location.href = "../../../index.html";
-            }
-            else if(respsota == "3") {
-                alert("lamentamos vc perdeu o Jogo! =(")
-                window.location.href = "../../../index.html";
-            } 
-            else {
-                alert("insira o número corretamente (1, 2, 3)")
-                escolha();
-            }
-        }
-    </script>
+    <script type="text/javascript" src="js/javascript.js"></script>
 </body>
 </html>

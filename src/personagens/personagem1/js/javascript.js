@@ -8,8 +8,8 @@ function escolha(num) {
 
     let pagina = String(num)
 
-    if (resposta == "1") {
-        window.location.href = "fase" + pagina + ".html"
+    if (resposta == "1") {        
+        window.location.href = "fase" + pagina + ".html" // "fase2.html"
     } 
     else if(resposta == "2") {
         alert("lamentamos vc perdeu o Jogo! =(")

@@ -7,88 +7,35 @@
     <title>Personagem Hyoga </title>
 </head>
 <body>
-    <!-- A verificação da entrada de dados do usuário
-     deve ser realizada utilizando estruturas de repetição -->
-
-    <!-- ● Os textos da narrativa devem ser apresentados na página HTML -->
-
-    <!-- Estruturas condicionais devem ser utilizadas para guiar o jogador pela narrativa-->
-
-    <!-- Funções devem ser criadas e utilizadas para uma maior e melhor legibilidade do código-->
-
-    <!--  Todo mecanismo de interação entre jogador e jogo deve ser feito através do (prompt)-->
+    <main>
+        <div class="teste">
+            <p>historia 1</p>
+            <p>Resposta: 1-  historia 1 </p>
+            <p>Resposta: 2-  historia 1 </p>
+            <p>Resposta: 3-  historia 1 </p>
+            <button type="button" onclick="escolha()">RESPONDER</button>
+        </div>
+    </main>
     <script>
-        function fase1(params) {
-            return (
-                <div>
-                    <p>historia 1</p>
-                    <p>Resposta: 1-  historia 1 </p>
-                    <p>Resposta: 2-  historia 1 </p>
-                    <p>Resposta: 3-  historia 1 </p>
-                    <button type="button" onclick="inicia()">RESPONDER</button><p>historia 2</p>
-                </div>
-            )
-        }
+        function escolha() {
 
-        function fase1(params) {
-            return (
-                <div>
-                    <p>historia 2</p>
-                    <p>Resposta: 1-  historia 2 </p>
-                    <p>Resposta: 2-  historia 2 </p>
-                    <p>Resposta: 3-  historia 2 </p>
-                    <button type="button" onclick="inicia()">RESPONDER</button>
-                </div>
-            )
-        }
+            let resposta = window.prompt("selecione a resposta");
 
-        function fase1(params) {
-            return (
-                <div>
-                    <p>historia 3</p>
-                    <p>Resposta: 1-  historia 3 </p>
-                    <p>Resposta: 2-  historia 3 </p>
-                    <p>Resposta: 3-  historia 3 </p>
-                    <button type="button" onclick="inicia()">RESPONDER</button>
-                </div>
-            )
-        }
-
-    </script>
-    <!--  historia 1-->
-    <!--  historia 2-->
-    <!--  historia 1-->
-
-
-    <!--  historia 1-->    <p>historia 2</p>
-    <p>Resposta: 1-  historia 2 </p>
-    <p>Resposta: 2-  historia 2 </p>
-    <p>historia 3</p>
-    <p>Resposta: 1-  historia 3 </p>
-        var vida = 2;
-
-        function escolha(){
-            let resposta = window.prompt("selecione a resposta")
-            for(var i = 1; i <= 3; i++){
-
-            }
-
-            if(resposta == "1") {
-                window.location.href = "src/personagens/personagem1/fase1.html"
-            }
+            if (resposta == "1") {
+                window.location.href = "fase2.html"
+            } 
             else if(resposta == "2") {
-                
+                alert("lamentamos vc perdeu o Jogo! =(")
+                window.location.href = "../../../index.html";
             }
             else if(respsota == "3") {
-                
-            }else {
-               
+                alert("lamentamos vc perdeu o Jogo! =(")
+                window.location.href = "../../../index.html";
+            } 
+            else {
+                alert("insira o número corretamente (1, 2, 3)")
+                escolha();
             }
-
-            function vida(){
-
-            }
-
         }
     </script>
 </body>

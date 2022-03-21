@@ -11,11 +11,35 @@
      deve ser realizada utilizando estruturas de repetição -->
 
     <!-- ● Os textos da narrativa devem ser apresentados na página HTML -->
-    <p>Se ontem fosse amanhã, hoje seria sexta-feira. Que dia é hoje?
-       </p>
-    <p>Resposta: 1-  Quarta-feira. </p>
-    <p>Resposta: 2 - Quinta-feira. </p>
-    <p>Resposta: 3 - Sexta-feira. </p>
+    <main>
+        <p>Se ontem fosse amanhã, hoje seria sexta-feira. Que dia é hoje?</p>
+        <p>Resposta: 1-  Quarta-feira. </p>
+        <p>Resposta: 2 - Quinta-feira. </p>
+        <p>Resposta: 3 - Sexta-feira. </p>
+        <button type="button" onclick="escolha()">RESPONDER</button>
+    </main>
+    <script>
+        function escolha() {
+
+            let resposta = window.prompt("selecione a resposta");
+
+            if (resposta == "1") {
+                window.location.href = "fase3.html"
+            } 
+            else if(resposta == "2") {
+                alert("lamentamos vc perdeu o Jogo! =(")
+                window.location.href = "../../../index.html";
+            }
+            else if(respsota == "3") {
+                alert("lamentamos vc perdeu o Jogo! =(")
+                window.location.href = "../../../index.html";
+            } 
+            else {
+                alert("insira o número corretamente (1, 2, 3)")
+                escolha();
+            }
+        }
+    </script>
     
     <!-- Estruturas condicionais devem ser utilizadas para guiar o jogador pela narrativa-->
 

@@ -11,13 +11,36 @@
      deve ser realizada utilizando estruturas de repetição -->
 
     <!-- ● Os textos da narrativa devem ser apresentados na página HTML -->
-    <p>O que é, o que é? Que mesmo atravessando o rio consegue não se molhar.
-    </p>
-    <p>Resposta: 1 - A ponte.</p>
-    <p>Resposta: 2 - O barco.</p>
-    <p>Resposta: 3 - O navio.</p>
-    
-    
+    <main>
+        <p>O que é, o que é? Que mesmo atravessando o rio consegue não se molhar.
+        </p>
+        <p>Resposta: 1 - A ponte.</p>
+        <p>Resposta: 2 - O barco.</p>
+        <p>Resposta: 3 - O navio.</p>
+        <button type="button" onclick="escolha()">RESPONDER</button>
+    </main>
+    <script>
+        function escolha() {
+
+            let resposta = window.prompt("selecione a resposta");
+
+            if (resposta == "1") {
+                window.location.href = "fimDeJogo.html"
+            } 
+            else if(resposta == "2") {
+                alert("lamentamos vc perdeu o Jogo! =(")
+                window.location.href = "../../../index.html";
+            }
+            else if(respsota == "3") {
+                alert("lamentamos vc perdeu o Jogo! =(")
+                window.location.href = "../../../index.html";
+            } 
+            else {
+                alert("insira o número corretamente (1, 2, 3)")
+                escolha();
+            }
+        }
+    </script>
     <!-- Estruturas condicionais devem ser utilizadas para guiar o jogador pela narrativa-->
 
     <!-- Funções devem ser criadas e utilizadas para uma maior e melhor legibilidade do código-->
